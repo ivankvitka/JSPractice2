@@ -6,7 +6,7 @@ function checkValue() {
   }
 }
 
-function checkSimpleInt(value) {
+function showSimpleInt(value) {
   var simpleInt;
   for (var i = 2; i <= value; i++) {
     for (var j = 2; j <= i; j++) {
@@ -17,7 +17,7 @@ function checkSimpleInt(value) {
       simpleInt = i;
     }
     if (simpleInt !== null) {
-      console.log("simple " + simpleInt);
+      console.log("simple integer: " + simpleInt);
     }
   }
 }
@@ -82,11 +82,16 @@ function showFibonacciNumberRecursion(number) {
 function reverseString(str) {
   var newStr = "";
   for (var i = str.length - 1; i >= 0; i--) {
-    newStr+= str[i];
+    newStr += str[i];
   }
   return newStr;
 }
 
 checkValue();
-
-console.log(reverseString("i am soldier"));
+showSimpleInt(10);
+showFizzBuzz();
+console.log("amount of chars in string: " + calculateCharAmount("What are you doing here", "e"));
+console.log("random number: " + generateRandomNumber(1, 20));
+console.log("Fibonacci number: " + showFibonacciNumber(10));
+console.log("Fibonacci number recursion: " + showFibonacciNumberRecursion(10));
+console.log("reverse string: " + '"' + reverseString("no lemon, no melon")+ '"');
