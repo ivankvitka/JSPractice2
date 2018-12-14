@@ -1,2 +1,2 @@
 # JS Practice
-[link to github pages](http://ivankvitka.github.io/JSPractice)
+[link to github pages](http://ivankvitka.github.io/JSPractice2)
